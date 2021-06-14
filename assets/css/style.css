@@ -1,0 +1,485 @@
+@import 'font/flaticon.css';
+
+.flex-main-wrap {
+    display: flex;
+}
+
+.icons::before {
+    margin-left: 0;
+}
+
+.no-shadow:focus {
+    box-shadow: none !important;
+}
+
+.flex-main-wrap .side-bar {
+    height: 100vh;
+    min-width: 215px;
+    border-right: 1px solid #e8e9e9;
+    padding: 0.7rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+.flex-main-wrap .content-section {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f4faff;
+}
+
+.nav-wrap .nav-link {
+    color: #79869d;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav-wrap .nav-link.active {
+    background: linear-gradient(to bottom, #6327ba, #c74ff3);
+    color: #ffffff;
+}
+
+.side-bar .side-logo {
+    width: 6rem;
+    margin: 0 1rem 2.5rem 1rem;
+}
+
+.side-nav-icon::before {
+    font-size: 1.1rem;
+    margin-right: 0.6rem;
+    line-height: 26px !important;
+}
+
+.option-icon::before {
+    font-size: 0.8rem;
+    line-height: 21px !important;
+    margin-right: 2rem;
+}
+
+.btn-drop {
+    cursor: pointer;
+}
+
+.setup-drop {
+    display: none;
+    position: absolute;
+    top: 43px;
+    right: 0;
+}
+
+.setup-drop .setup-drop-inner {
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 3px #bfb9b9;
+    padding: 0.8rem 0;
+    position: relative;
+}
+
+.setup-drop .setup-drop-inner::before {
+    content: "";
+    border: 4px solid;
+    border-color: transparent transparent #fbfbfb transparent;
+    position: absolute;
+    top: -8px;
+    right: 50%;
+    margin-right: -6px;
+}
+
+.setup-drop-inner .nav-link {
+    font-size: 0.7rem;
+    padding: 0.1rem 1rem;
+}
+
+.content-head {
+    background: linear-gradient(to right, #cd60f5, #6126b9);
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.7rem;
+    box-shadow: 1px 1px 3px #a69f9f;
+}
+
+.content-head .greet-message {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.menu-section .nav-link {
+    padding: 0.5rem 0.4rem;
+}
+
+.menu-section .nav-link .head-icon::before {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.content-head .menu-section {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu-section .user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 0.7rem;
+}
+
+.user-info .user-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.user-info .name {
+    font-size: 0.7rem;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+.scroll-content {
+    height: calc(100% - 57.6px);
+    overflow-y: auto;
+}
+
+.btn-create {
+    color: #855aca;
+    border: 2px solid;
+    border-color: #7d44c1 #bb1498 #bb1498 #7d44c1;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0rem 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn-create span {
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.content-wrap {
+    background-color: #ffffff;
+    min-height: calc(100% - 70px);
+    border-radius: 0.7rem;
+    box-shadow: 1px 0px 7px #d2cccc;
+    margin-bottom: 2rem;
+}
+
+.content-wrap .title {
+    font-size: 0.8rem;
+    color: #8994a0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #b5b5b5;
+    border-radius: 0.5rem;
+    max-width: 150px;
+}
+
+
+.search-form .search-btn {
+    background-color: #b5b5b5;
+    border-radius: 0.3rem 0 0 0.3rem;
+    padding: 0.175rem 0.45rem;
+}
+
+.search-form input {
+    background-color: transparent;
+    border: none;
+    padding: 0.175rem .75rem;
+    height: calc(1.5em + 0.75rem + -6px);
+    font-size: 0.8rem;
+}
+
+.search-form .search-btn i::before {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.verilead-table {
+    border-spacing: 0 0.8rem;
+    border-collapse: separate;
+}
+
+.verilead-table thead tr,
+.verilead-table thead th,
+.verilead-table tbody td {
+    border: none;
+}
+
+.verilead-table thead th {
+    font-size: 0.8rem;
+}
+
+.verilead-table td,
+.verilead-table th {
+    padding: 1.55rem 1.15rem;
+    color: #7f8b98;
+}
+
+.verilead-table tbody td {
+    font-size: 0.7rem;
+}
+
+.verilead-table tbody tr {
+    box-shadow: 0px 3px 5px #eae5e5;
+}
+
+.verilead-table tbody tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+
+.table-more-option::before {
+    font-size: 0.9rem;
+    color: #7f8b98;
+    margin-left: 1rem;
+}
+
+.table-nav {
+    padding: 0 0.7rem 0.7rem 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.table-nav .page-link {
+    color: #303033;
+    border: 2px solid #b8b8b8;
+    border-radius: 0.4rem !important;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.9rem;
+}
+
+.table-nav .active .page-link {
+    background-color: #ffffff;
+    color: #7330bf;
+    border: 2px solid #b8b8b8;
+}
+
+.table-nav nav {
+    flex-grow: 1;
+}
+
+.table-nav .desc {
+    font-size: 0.8rem;
+    color: #7441c1;
+}
+
+.table-nav .page-item {
+    margin-right: 0.5rem;
+}
+
+.show {
+    display: block !important;
+}
+
+.modal-inner {
+    padding: 0.7rem 0.8rem;
+}
+
+.modal-inner .title {
+    font-size: 0.8rem;
+    color: #9aa4b5;
+    margin-bottom: 2rem;
+}
+
+.modal-inner label,
+.settings-form-wrap label {
+    font-size: 0.7rem;
+    color: #9aa4b5;
+}
+
+.form-general {
+    background-color: #efefef;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.nb-text {
+    color: #9aa4b5;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.btn-flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn-close {
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.7rem;
+}
+
+.btn-create-modal {
+    background-color: #00e4f4;
+    color: #ffffff;
+    font-size: 0.7rem;
+    padding: 0.65rem;
+}
+
+.step-title {
+    color: #9aa4b5;
+    font-size: 0.8rem;
+}
+
+.setup-steps li {
+    font-size: 0.7rem;
+    color: #9aa4b5;
+}
+
+.auto-check {
+    background-color: #06aa20;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.1rem;
+}
+
+.no-data {
+    display: inline-flex;
+    align-items: center;
+}
+
+.auto-check span,
+.no-data span {
+    font-size: 0.6rem;
+    margin-left: 0.3rem;
+}
+
+.bg-none {
+    background-color: transparent !important;
+
+}
+
+.bg-none i::before {
+    color: #9aa4b5 !important;
+}
+
+
+
+.check-icon,
+.alert-icon {
+    width: 1rem;
+}
+
+.modal-inner .form-check-label {
+    display: initial;
+}
+
+.search-form-train {
+    max-width: 235px;
+}
+
+.training-wrap iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    border-radius: 1.7rem;
+}
+
+.fit-height {
+    min-height: calc(100% - 48px);
+}
+
+.settings-wrap {
+    padding: 1rem;
+    min-height: calc(100% - 18px);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-form-wrap,
+.ghost-table {
+    margin-top: 3rem;
+}
+
+.user-img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-img-wrap img {
+    width: 5rem;
+}
+
+.user-img-wrap .title {
+    margin-top: 0.4rem;
+}
+
+.settings-form-wrap {
+    padding: 0 2.5rem;
+}
+
+.settings-form-wrap .form-group {
+    margin-bottom: 0.3rem;
+}
+
+.settings-form-wrap .form-general {
+    height: calc(1.5em + .75rem + 8px);
+}
+
+.settings-form-wrap .email-text {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.ghost-table tr td {
+    border: none;
+}
+
+.ghost-table tr td {
+    color: #9aa4b5;
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+
+.ghost-table tr td:first-child {
+    min-width: 130px;
+}
+
+.btn-create-modal i::before {
+    font-size: 0.9rem;
+}
+
+.bg-pink {
+    background-color: #e60b88;
+}
+
+@media screen and (min-width: 992px) {
+
+    .modal-lg,
+    .modal-xl {
+        max-width: 900px;
+    }
+
+    .nb-text {
+        max-width: 50%;
+    }
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
