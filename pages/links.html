@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Up</title>
+    <title>Links</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="create-ebook.html">
+                        <a class="nav-link active" href="create-ebook.html">
                             <i class="flaticon-broken-link icons side-nav-icon"></i>
                             <span class="nav-text">
                                 Links
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="product.html">
+                        <a class="nav-link" href="product.html">
                             <i class="flaticon-pop-up icons side-nav-icon"></i>
                             <span class="nav-text">
                                 Pop Ups
@@ -168,13 +168,13 @@
                 <div class="container-fluid scroll-content">
                     <div class="d-flex justify-content-end my-2">
                         <button data-toggle="modal" data-target="#setup-pixel-modal" class="btn btn-create">
-                            <span>+</span> New Pop-Up
+                            <span>+</span> New Link
                         </button>
                     </div>
-                    <div class="content-wrap">
+                    <div class="content-wrap d-flex flex-column">
                         <div class="d-flex justify-content-between py-4 px-3">
                             <h1 class="title">
-                                All HTML Pop-Up
+                                All Links
                             </h1>
 
                             <div class="search-form">
@@ -185,78 +185,87 @@
                             </div>
                         </div>
 
-                        <table class="table verilead-table">
+                        <table class="table verilead-table link-table">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Autosubmit</th>
+                                    <th>Generated Url/Target Url</th>
+                                    <th>Channels</th>
+                                    <th>Clicks</th>
+                                    <th>Impressions</th>
+                                    <th>Leads</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row">Freelance Popup</td>
-                                    <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
+                                    <td scope="row">
+                                        <div class="link-paper">
+                                            Secrets EBook-Test2
                                         </div>
+                                    </td>
+                                    <td>
+                                        <div class="link-main-wrap">
+                                            https//appverilead.com/apiv1php?u=1_//10105051707
+                                            <div class="gen-link">
+                                                https://docs.google.com/document/download-more.pdf
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        107
+                                    </td>
+                                    <td>
+                                        104
+                                    </td>
+                                    <td>
+                                        5
                                     </td>
                                     <td>
                                         <i class="flaticon-menu icons table-more-option"></i>
                                     </td>
 
                                 </tr>
-                                <tr>
-                                    <td scope="row">Emeka</td>
-                                    <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
+                                 <tr>
+                                    <td scope="row">
+                                        <div class="link-paper">
+                                            Secrets EBook-Test2
                                         </div>
+                                    </td>
+                                    <td>
+                                        <div class="link-main-wrap">
+                                            https//appverilead.com/apiv1php?u=1_//10105051707
+                                            <div class="gen-link">
+                                                https://docs.google.com/document/download-more.pdf
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        107
+                                    </td>
+                                    <td>
+                                        104
+                                    </td>
+                                    <td>
+                                        5
                                     </td>
                                     <td>
                                         <i class="flaticon-menu icons table-more-option"></i>
                                     </td>
 
                                 </tr>
-                                <tr>
-                                    <td scope="row">Uche Nick</td>
-                                    <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="flaticon-menu icons table-more-option"></i>
-                                    </td>
 
-                                </tr>
-                                <tr>
-                                    <td scope="row">Rowland Uche</td>
-                                    <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="flaticon-menu icons table-more-option"></i>
-                                    </td>
-
-                                </tr>
                             </tbody>
                         </table>
-                        <div class="table-nav">
+                        <div class="table-nav mt-auto">
                             <nav aria-label="Page navigation">
                                 <ul class="pagination justify-content-center mb-0">
                                     <li class="page-item disabled">
@@ -288,79 +297,116 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-inner">
-                    <h6 class="title">
-                        Create New Pop-Up
-                    </h6>
+                    <!-- <h6 class="title">
+                        Link Info
+                    </h6> -->
 
                     <div class="form-group">
-                        <label for="my-input">Pop-Up Name</label>
-                        <input id="my-input" class="form-control form-general" type="text" name="">
+                        <label for="my-input">Link Info</label>
+                        <input id="my-input" class="form-control form-general" type="text" name=""
+                            placeholder="link Name">
                     </div>
 
-                    <div class="nb-text text-dark mb-2">
-                        Pop-Up Should Happen:
+                    <div class="form-group form-general form-fetch">
+                        <button class="btn btn-fetch no-shadow">Fetch</button>
+                        <input type="text" name="" id="" class="form-control no-shadow" placeholder="Target link">
                     </div>
 
                     <div class="form-group">
-                        <label for="my-input">When the page is opened first</label>
                         <select id="my-select" class="form-control form-general" name="">
-                            <option value="none">Select what happens</option>
-                            <option value="">
-                                When scroll get to the middle of the page
-                            </option>
-                            <option value="">
-                                when scroll get to the bottom of the page
-                            </option>
-                            <option value="">
-                                30 second after opening page
-                            </option>
-                            <option value="">
-                                1 min after opening
-                            </option>
+                            <option>Select a campaign</option>
+                            <option value="">Better then you</option>
+                            <option value="">Only FB</option>
+                            <option value="">Affiliate guide</option>
                         </select>
-
                     </div>
 
                     <div class="form-group">
-                        <label for="my-input">Select link:</label>
-                        <select id="my-select" class="form-control form-general" name="">
-                            <option value="none">Select a link</option>
-                            <option value="">
-                                Secrets ebook-test2
-                            </option>
-                            <option value="">
-                                Exclusive training (Limited access)
-                            </option>
-                            <option value="">
-                                Affiliate marking pro kickstart guide
-                            </option>
-                            <option value="">
-                                Custom domain test
-                            </option>
-                        </select>
-
+                        <label for="">Upload downloadable file (max size:2MB)</label>
+                        <input type="file" class="form-control-file form-general p-2" name="" id="" placeholder="">
                     </div>
 
-                    <div class="form-group">
-                        <label class="text-dark" for="my-input">CSS Link</label>
-                        <input id="my-input" class="form-control form-general" type="text" name="">
+                    <div class="form-group w-50">
+                        <input id="my-input" class="form-control form-general" type="text" name="" placeholder="Target">
                     </div>
 
-                    <div class="form-group">
-                        <label class="text-dark" for="my-input">HTML Elements</label>
-                        <textarea id="my-textarea" class="form-control form-general" name="" rows="2"></textarea>
-                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="nb-text text-dark mb-1">
+                                Customize web application
+                            </div>
+                            <div class="form-group">
+                                <label for="my-input">Page's Information</label>
+                                <input id="my-input" class="form-control form-general" type="text" name=""
+                                    placeholder="Page Heading">
+                            </div>
+                            <div class="form-group">
+                                <input id="my-input" class="form-control form-general" type="text" name=""
+                                    placeholder="Meta Title">
+                            </div>
+                            <div class="form-group">
+                                <input id="my-input" class="form-control form-general" type="text" name=""
+                                    placeholder="Meta Description">
+                            </div>
+                            <div class="form-group">
+                                <input id="my-input" class="form-control form-general" type="text" name=""
+                                    placeholder="Select Meta Image">
+                            </div>
+                            <div class="form-group">
+                                <label for="my-input">Customized domain</label>
+                                <select id="my-select" class="form-control form-general" name="">
+                                    <option>Select a campaign</option>
+                                    <option value="">Better then you</option>
+                                    <option value="">Only FB</option>
+                                    <option value="">Affiliate guide</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="nb-text text-dark mb-1">
+                                Customize webview
+                            </div>
+                            <div class="form-group mb-1">
+                                <label for="my-input">Background color</label>
+                                <input id="my-input" class="form-control form-color" type="color" name=""
+                                    placeholder="Page Heading">
+                            </div>
+                            <div class="form-group">
+                                <label for="my-input">Text color</label>
+                                <input id="my-input" class="form-control form-color" type="color" name=""
+                                    placeholder="Page Heading">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Background Image</label>
+                                <input type="file" class="form-control-file form-general p-2" name="" id="">
+                            </div>
+                            <div class="form-group">
+                                <input id="my-input" class="form-control form-general" type="text" name=""
+                                    placeholder="Link Text">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="" id="" value="">
+                                    Facebook
+                                </label>
+                            </div>
 
-                    <div class="d-flex justify-content-end mt-4">
-                        <div class="btn-flex">
-                            <button data-dismiss="modal" class="btn btn-close">
-                                X
-                            </button>
-                            <button class="btn btn-create-modal ml-3">
-                                Create Pixel Tracking
-                            </button>
+                            <div class="d-flex justify-content-end ">
+                                <div class="btn-flex">
+                                    <button data-dismiss="modal" class="btn btn-close">
+                                        X
+                                    </button>
+                                    <button class="btn btn-create-modal ml-3">
+                                        Create Pixel Tracking
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
+
+                    
 
 
                 </div>

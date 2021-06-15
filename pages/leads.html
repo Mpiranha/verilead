@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Up</title>
+    <title>Leads</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <div class="container-fluid px-0">
+
+
         <div class="flex-main-wrap">
             <div class="side-bar">
                 <img class="side-logo" src="../assets/image/logo-name.png" alt="logo" srcset="">
@@ -42,7 +44,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="library.html">
+                        <a class="nav-link active" href="library.html">
                             <i class="flaticon-man-user icons side-nav-icon"></i>
                             <span class="nav-text">
                                 Leads
@@ -50,7 +52,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="product.html">
+                        <a class="nav-link" href="product.html">
                             <i class="flaticon-pop-up icons side-nav-icon"></i>
                             <span class="nav-text">
                                 Pop Ups
@@ -166,15 +168,21 @@
                     </div>
                 </div>
                 <div class="container-fluid scroll-content">
-                    <div class="d-flex justify-content-end my-2">
+                    <div class="d-flex align-items-center justify-content-end my-2 btn-lead-wrap">
                         <button data-toggle="modal" data-target="#setup-pixel-modal" class="btn btn-create">
-                            <span>+</span> New Pop-Up
+                            Export
+                        </button>
+                        <select id="my-select" class="form-control no-shadow btn-create lead-select" name="">
+                            <option>Select Integration Account Sync</option>
+                        </select>
+                        <button data-toggle="modal" data-target="#setup-pixel-modal" class="btn btn-create">
+                            Synchronize
                         </button>
                     </div>
                     <div class="content-wrap">
                         <div class="d-flex justify-content-between py-4 px-3">
                             <h1 class="title">
-                                All HTML Pop-Up
+                                All Leads
                             </h1>
 
                             <div class="search-form">
@@ -185,72 +193,75 @@
                             </div>
                         </div>
 
-                        <table class="table verilead-table">
+                        <table class="table verilead-table lead-table">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Autosubmit</th>
+                                    <th>Email</th>
+                                    <th>Source</th>
+                                    <th>Link</th>
+                                    <th>Date</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row">Freelance Popup</td>
+                                    <td scope="row">Antonio,ooo,ooo</td>
+                                    <td>tonienick@yahoo.com</td>
+                                    <td>Twitter</td>
+                                    <td>https://app.verileads.co/apiv1/target1.php?u=1_210105051707</td>
                                     <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
-                                        </div>
+                                        Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <i class="flaticon-menu icons table-more-option"></i>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td scope="row">Emeka</td>
-                                    <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="flaticon-menu icons table-more-option"></i>
+                                        <button class="btn btn-close">
+                                            X
+                                        </button>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td scope="row">Uche Nick</td>
+                                    <td scope="row">Antonio,ooo,ooo</td>
+                                    <td>tonienick@yahoo.com</td>
+                                    <td>Twitter</td>
+                                    <td>https://app.verileads.co/apiv1/target1.php?u=1_210105051707</td>
                                     <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
-                                        </div>
+                                        Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <i class="flaticon-menu icons table-more-option"></i>
+                                        <button class="btn btn-close">
+                                            X
+                                        </button>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td scope="row">Rowland Uche</td>
+                                    <td scope="row">Antonio,ooo,ooo</td>
+                                    <td>tonienick@yahoo.com</td>
+                                    <td>Twitter</td>
+                                    <td>https://app.verileads.co/apiv1/target1.php?u=1_210105051707</td>
                                     <td>
-                                        <div class="auto-check bg-pink">
-                                            <img src="../assets/icons/no-stopping.svg" alt="" class="check-icon">
-                                            <span>
-                                                Not auto-submit
-                                            </span>
-                                        </div>
+                                        Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <i class="flaticon-menu icons table-more-option"></i>
+                                        <button class="btn btn-close">
+                                            X
+                                        </button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td scope="row">Antonio,ooo,ooo</td>
+                                    <td>tonienick@yahoo.com</td>
+                                    <td>Twitter</td>
+                                    <td>https://app.verileads.co/apiv1/target1.php?u=1_210105051707</td>
+                                    <td>
+                                        Fri Jan 08 2021
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-close">
+                                            X
+                                        </button>
                                     </td>
 
                                 </tr>
@@ -279,90 +290,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade bd-example-modal-lg" id="setup-pixel-modal">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-inner">
-                    <h6 class="title">
-                        Create New Pop-Up
-                    </h6>
-
-                    <div class="form-group">
-                        <label for="my-input">Pop-Up Name</label>
-                        <input id="my-input" class="form-control form-general" type="text" name="">
-                    </div>
-
-                    <div class="nb-text text-dark mb-2">
-                        Pop-Up Should Happen:
-                    </div>
-
-                    <div class="form-group">
-                        <label for="my-input">When the page is opened first</label>
-                        <select id="my-select" class="form-control form-general" name="">
-                            <option value="none">Select what happens</option>
-                            <option value="">
-                                When scroll get to the middle of the page
-                            </option>
-                            <option value="">
-                                when scroll get to the bottom of the page
-                            </option>
-                            <option value="">
-                                30 second after opening page
-                            </option>
-                            <option value="">
-                                1 min after opening
-                            </option>
-                        </select>
-
-                    </div>
-
-                    <div class="form-group">
-                        <label for="my-input">Select link:</label>
-                        <select id="my-select" class="form-control form-general" name="">
-                            <option value="none">Select a link</option>
-                            <option value="">
-                                Secrets ebook-test2
-                            </option>
-                            <option value="">
-                                Exclusive training (Limited access)
-                            </option>
-                            <option value="">
-                                Affiliate marking pro kickstart guide
-                            </option>
-                            <option value="">
-                                Custom domain test
-                            </option>
-                        </select>
-
-                    </div>
-
-                    <div class="form-group">
-                        <label class="text-dark" for="my-input">CSS Link</label>
-                        <input id="my-input" class="form-control form-general" type="text" name="">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="text-dark" for="my-input">HTML Elements</label>
-                        <textarea id="my-textarea" class="form-control form-general" name="" rows="2"></textarea>
-                    </div>
-
-                    <div class="d-flex justify-content-end mt-4">
-                        <div class="btn-flex">
-                            <button data-dismiss="modal" class="btn btn-close">
-                                X
-                            </button>
-                            <button class="btn btn-create-modal ml-3">
-                                Create Pixel Tracking
-                            </button>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
