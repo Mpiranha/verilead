@@ -228,6 +228,7 @@
 
 .verilead-table tbody td {
     font-size: 0.7rem;
+    vertical-align: middle;
 }
 
 .verilead-table tbody tr {
