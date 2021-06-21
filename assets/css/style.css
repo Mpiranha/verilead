@@ -32,7 +32,7 @@
 
 .nav-wrap .nav-link {
     color: #79869d;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     display: flex;
     align-items: center;
     padding: 0.7rem 1rem;
@@ -157,7 +157,7 @@
 }
 
 .user-info .name {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #ffffff;
     margin-right: 0.5rem;
 }
@@ -246,7 +246,7 @@
 }
 
 .verilead-table tbody td {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     vertical-align: middle;
 }
 
@@ -763,7 +763,7 @@ input:checked+.slider:before {
 }
 
 .lead-stat-box .title {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     /* font-weight: bold; */
     color: #9aa4b5;
     margin-bottom: 0;
@@ -771,7 +771,7 @@ input:checked+.slider:before {
 
 .lead-stat-box .desc {
     color: #9aa4b5;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 #chartdiv {
