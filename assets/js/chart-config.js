@@ -675,7 +675,7 @@ var options = {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
         labels: {
             style: {
-                colors: ['#9aa4b5', '#9aa4b5', '#9aa4b5', '#9aa4b5', '#9aa4b5', '#9aa4b5', '#9aa4b5', '#9aa4b5', '#9aa4b5'],
+                colors: ['#79869d', '#79869d', '#79869d', '#79869d', '#79869d', '#79869d', '#79869d', '#79869d', '#79869d'],
                 fontSize: '0.7rem'
             }
         }

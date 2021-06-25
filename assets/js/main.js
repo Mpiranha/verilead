@@ -23,6 +23,22 @@
         });
     });
 
+    $('.action-drop-btn').each(function () {
+        $(this).on('click', function () {
+            $(this).siblings('.action-drop').toggleClass('show')
+            $(this).siblings($(this).attr('data-target').addClass('show'));
+            console.log($($(this) + ' ' + $(this).attr('data-target')));
+
+        });
+    });
+
+    $('[data-toggle=slide-in-wrap]').each(function () {
+        $(this).on('click', function () {
+            $($(this).attr('data-target')).addClass('show');
+
+        });
+    });
+
     $('.btn-toggle').each(function () {
         $(this).on('click', function () {
             removeActive('.toggle-item', 'show');
