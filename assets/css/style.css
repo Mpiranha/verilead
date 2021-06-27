@@ -83,14 +83,16 @@
     cursor: pointer;
 }
 
-.setup-drop {
+.setup-drop,
+.user-drop {
     display: none;
     position: absolute;
     top: 43px;
     right: 0;
 }
 
-.setup-drop .setup-drop-inner {
+.setup-drop .setup-drop-inner,
+.user-drop .setup-drop-inner {
     background-color: #ffffff;
     border-radius: 0.3rem;
     box-shadow: 1px 1px 3px #bfb9b9;
@@ -98,7 +100,8 @@
     position: relative;
 }
 
-.setup-drop .setup-drop-inner::before {
+.setup-drop .setup-drop-inner::before,
+.user-drop .setup-drop-inner::before {
     content: "";
     border: 4px solid;
     border-color: transparent transparent #fbfbfb transparent;
@@ -886,7 +889,7 @@ input:checked+.slider:before {
     top: 30px;
     right: 50%;
     margin-right: -13px;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .action-drop .setup-drop-inner {
@@ -951,6 +954,16 @@ input:checked+.slider:before {
 
 .user-drop .setup-drop-inner::before {
     margin-right: -62px;
+}
+
+#delete-modal .title {
+    font-size: 1.5rem;
+    color: red;
+}
+
+#delete-modal .btn-close, #delete-modal .btn-create-modal {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
 }
 
 

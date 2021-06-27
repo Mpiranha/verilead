@@ -93,7 +93,7 @@
                                             <a class="nav-link" href="setup-form.html">Form</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="setup-custom.html">Custom</a>
+                                            <a class="nav-link" href="setup-custom.html">Custom Domain</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="setup-pixel.html">Pixels tracking</a>
@@ -176,7 +176,7 @@
                            <a class="btn-drop" href="#" data-target=".user-drop">
                                 <img class="user-img" src="../assets/icons/profile-user-white.svg" alt="">
                             </a>
-                            <div class="setup-drop user-drop">
+                            <div class="user-drop">
                                 <div class="setup-drop-inner">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
@@ -252,12 +252,12 @@
                                                                 Edit</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#copy-code-modal">
                                                                 <i class="flaticon-processor icons"></i>
                                                                 Embed</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#delete-modal">
                                                                 <i class="flaticon-trash icons"></i>
                                                                 Delete</a>
                                                         </li>
@@ -293,12 +293,12 @@
                                                                 Edit</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#copy-code-modal">
                                                                 <i class="flaticon-processor icons"></i>
                                                                 Embed</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#delete-modal">
                                                                 <i class="flaticon-trash icons"></i>
                                                                 Delete</a>
                                                         </li>
@@ -334,12 +334,12 @@
                                                                 Edit</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#copy-code-modal">
                                                                 <i class="flaticon-processor icons"></i>
                                                                 Embed</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#delete-modal">
                                                                 <i class="flaticon-trash icons"></i>
                                                                 Delete</a>
                                                         </li>
@@ -375,12 +375,12 @@
                                                                 Edit</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#copy-code-modal">
                                                                 <i class="flaticon-processor icons"></i>
                                                                 Embed</a>
                                                         </li>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#delete-modal">
                                                                 <i class="flaticon-trash icons"></i>
                                                                 Delete</a>
                                                         </li>
@@ -479,6 +479,59 @@
                     </div>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" id="copy-code-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-inner">
+                    <h6 class="title">
+                        Click to copy
+                    </h6>
+
+
+
+                    <div class="form-group">
+                        <textarea readonly class="form-control form-general box-copy" name="" rows="3">
+                            <hello></hello>
+                        </textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-4">
+                        <div class="btn-flex">
+                            <button data-dismiss="modal" class="btn btn-close">
+                                X
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" id="delete-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-inner">
+                    <h6 class="title text-center">
+                        Are You Sure you want to delete?
+                    </h6>
+
+                    <div class="d-flex justify-content-end mt-4">
+                        <div class="btn-flex w-100 justify-content-between">
+                            <button class="btn btn-close">
+                                Sure, Delete!
+                            </button>
+                            <button class="btn btn-create-modal ml-3" data-dismiss="modal" class="btn btn-close">
+                                Nah, I find it Useful!
+                            </button>
+                        </div>
+                    </div>
+
+                   
                 </div>
             </div>
         </div>

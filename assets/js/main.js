@@ -66,6 +66,19 @@
         });
     });
 
+    $('.box-copy').on('click', function () {
+        $(this).select();
+        document.execCommand("copy");
+        clearSelection();
+    });
+
+    function clearSelection() {
+        if (document.selection)
+            document.selection.empty();
+        else if (window.getSelection)
+            window.getSelection().removeAllRanges();
+    }
+
     function removeActive(elem, keyword) {
         $(elem).each(function () {
             $(this).removeClass(keyword);
