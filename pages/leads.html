@@ -249,7 +249,7 @@
                                         Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <button class="btn btn-close">
+                                        <button data-toggle="modal" data-target="#delete-modal" class="btn btn-close">
                                             X
                                         </button>
                                     </td>
@@ -264,7 +264,7 @@
                                         Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <button class="btn btn-close">
+                                        <button data-toggle="modal" data-target="#delete-modal" class="btn btn-close">
                                             X
                                         </button>
                                     </td>
@@ -279,7 +279,7 @@
                                         Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <button class="btn btn-close">
+                                        <button data-toggle="modal" data-target="#delete-modal" class="btn btn-close">
                                             X
                                         </button>
                                     </td>
@@ -294,7 +294,7 @@
                                         Fri Jan 08 2021
                                     </td>
                                     <td>
-                                        <button class="btn btn-close">
+                                        <button data-toggle="modal" data-target="#delete-modal" class="btn btn-close">
                                             X
                                         </button>
                                     </td>
@@ -325,6 +325,31 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" id="delete-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-inner">
+                    <h6 class="title text-center">
+                        Are You Sure you want to delete?
+                    </h6>
+
+                    <div class="d-flex justify-content-end mt-4">
+                        <div class="btn-flex w-100 justify-content-between">
+                            <button class="btn btn-close">
+                                Delete
+                            </button>
+                            <button class="btn btn-create-modal ml-3" data-dismiss="modal" class="btn btn-close">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+
+                   
                 </div>
             </div>
         </div>

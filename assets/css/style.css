@@ -956,13 +956,17 @@ input:checked+.slider:before {
     margin-right: -62px;
 }
 
-#delete-modal .title {
-    font-size: 1.5rem;
-    color: red;
+#delete-modal .modal-dialog {
+    max-width: 380px;
 }
 
-#delete-modal .btn-close, #delete-modal .btn-create-modal {
+#delete-modal .title {
     font-size: 0.85rem;
+}
+
+#delete-modal .btn-close,
+#delete-modal .btn-create-modal {
+    font-size: 0.8rem;
     padding: 0.35rem 0.75rem;
 }
 

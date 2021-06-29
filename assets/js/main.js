@@ -1,4 +1,5 @@
-(function () {
+$(document).ready(function () {
+
     $('.btn-drop').each(function () {
         $(this).on('click', function () {
             $($(this).attr('data-target')).toggle('show');
@@ -23,14 +24,72 @@
         });
     });
 
+    // $('body').on('click', function (div) {
+    //     //alert('Yeah');
+    //     console.log($('.action-drop').hasClass('show'));
+    //     if ($('.action-drop').hasClass('show')) {
+    //         if (!div.target.classList.contains('action-drop')) {
+    //             $('.action-drop').removeClass('show');
+    //         }
+    //     }
+    // });
+
+    // $(document).on("click", function(event){
+        
+    //     var $trigger = $(".action-drop");
+    //     if($trigger !== event.target && !$trigger.has(event.target).length){
+    //        $(".action-drop").slideUp('fast');
+    //        alert('yeah');
+    //     }            
+    // });
+
     $('.action-drop-btn').each(function () {
+        //removeClass('show');
         $(this).on('click', function () {
-            $(this).siblings('.action-drop').toggleClass('show')
-            $(this).siblings($(this).attr('data-target').addClass('show'));
-            console.log($($(this) + ' ' + $(this).attr('data-target')));
+
+            if ($(this).siblings('.action-drop').hasClass('show')) {
+
+            } else {
+                closeAllActions();
+            }
+            // if ($(this).siblings('.action-drop').hasClass('show')) {
+            //     console.log($(this).siblings('.action-drop').hasClass('show'));
+            //     console.log('yeah');
+            //     $(this).siblings('.action-drop').removeClass('show');
+            // } else {
+            //      console.log($(this).siblings('.action-drop').hasClass('show'));
+            //     console.log('Nah');
+            //     $(this).siblings('.action-drop').addClass('show');
+            // }
+            //$(this).siblings('.action-drop').addClass('show');
+            if ($(this).siblings('.action-drop').hasClass('show')) {
+
+                $(this).siblings('.action-drop').removeClass('show');
+            } else {
+                //alert('Nah');
+                $(this).siblings('.action-drop').addClass('show');
+            }
+
+            //$(this).siblings($(this).attr('data-target').addClass('show'));
+            //console.log($($(this) + ' ' + $(this).attr('data-target')));
 
         });
     });
+
+    function closeAllActions() {
+        $('.action-drop').each(function () {
+            $(this).removeClass('show');
+            if ($(this).hasClass('show')) {
+                console.log('after everything i got called');
+                $(this).removeClass('show');
+            }
+        });
+
+        // for (var i = 0; i < $('.action-drop-btn').length; i++) {
+        //     console.log($('.action-drop-btn')[i]);
+        //     $('.action-drop-btn')[i].classList.remove('show');
+        // }
+    }
 
     $('[data-toggle=slide-in-wrap]').each(function () {
         $(this).on('click', function () {
@@ -79,9 +138,12 @@
             window.getSelection().removeAllRanges();
     }
 
+
+
     function removeActive(elem, keyword) {
         $(elem).each(function () {
             $(this).removeClass(keyword);
         });
     }
-})();
+
+});
