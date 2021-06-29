@@ -970,6 +970,12 @@ input:checked+.slider:before {
     padding: 0.35rem 0.75rem;
 }
 
+.apexcharts-zoom-icon,
+.apexcharts-reset-icon,
+.apexcharts-menu-icon {
+    display: none !important;
+}
+
 
 @media screen and (min-width: 992px) {
 
