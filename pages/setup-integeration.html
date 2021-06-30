@@ -337,20 +337,36 @@
 
 
                     <div class="form-group">
-                        <label for="my-input">Active Campaign</label>
-                        <select id="my-select" class="form-control form-general" name="">
-                            <option>API key</option>
-                            <option>API URL</option>
+                        <label for="my-input">Platform</label>
+                        <select id="int-platform" class="form-control form-general" name="">
+                            <option value="active-campaign">ActiveCampaign</option> (API key, API URL)
+                            <option value="convert-kit">ConvertKit</option> (API key, Secret key)
+                            <option value="aweber">Aweber</option> (API key, API URL)
+                            <option value="constant-contact">Constant Contact</option> (API key, Secret key)
+                            <option value="infusion-soft">InfusionSoft</option> (API key, API URL)
+                            <option value="drip">Drip</option> (API key, Secret key)
+                            <option value="klaviyo">Klaviyo</option> (API key, API URL)
+                            <option value="get-response">Get Response</option> (API key, Secret key)
+                            <option value="i-contact">iContact</option> (API key, API URL)
+                            <option value="mailer-lite">MailerLite</option> (API key, Secret key)
+                            <option value="mail-chimp">MailChimp</option> (API key, API URL)
+                            <option value="sendiio">Sendiio</option> (API key, Secret key)
+                            <option value="send-lane">SendLane</option> (API key, API URL)
+                            <option value="web-hook">Webhook</option> (API key, Secret key)
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div id="api-key" class="form-group">
                         <label for="my-input">API Key</label>
-                        <input id="my-input" class="form-control form-general" type="text" name="">
+                        <input class="form-control form-general" type="text" name="">
                     </div>
-                    <div class="form-group">
+                    <div id="api-url" class="form-group">
                         <label for="my-input">API URL</label>
-                        <input id="my-input" class="form-control form-general" type="text" name="">
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="secret-key" class="form-group">
+                        <label for="my-input">Secret Key</label>
+                        <input class="form-control form-general" type="text" name="">
                     </div>
 
 

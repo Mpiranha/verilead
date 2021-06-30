@@ -35,13 +35,111 @@ $(document).ready(function () {
     // });
 
     // $(document).on("click", function(event){
-        
+
     //     var $trigger = $(".action-drop");
     //     if($trigger !== event.target && !$trigger.has(event.target).length){
     //        $(".action-drop").slideUp('fast');
     //        alert('yeah');
     //     }            
     // });
+
+    $('#int-platform').on('change', function () {
+        var apiKey = true;
+        var apiUrl = true;
+        var secretKey = false;
+
+        switch ($(this).val()) {
+            case 'active-campaign':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'convert-kit':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            case 'aweber':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'constant-contact':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            case 'infusion-soft':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'drip':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            case 'klaviyo':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'get-response':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            case 'i-contact':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'mailer-lite':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            case 'mail-chimp':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'sendiio':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            case 'send-lane':
+                apiKey = true;
+                apiUrl = true;
+                secretKey = false;
+                break;
+            case 'web-hook':
+                apiKey = true;
+                apiUrl = false;
+                secretKey = true;
+                break;
+            default:
+        }
+
+        if (apiKey) {
+            $('#api-key').css('display', 'inline');
+        } else {
+            $('#api-key').css('display', 'none');
+        }
+
+        if (apiUrl) {
+            $('#api-url').css('display', 'inline');
+        } else {
+            $('#api-url').css('display', 'none');
+        }
+
+        if (secretKey) {
+            $('#secret-key').css('display', 'inline');
+        } else {
+            $('#secret-key').css('display', 'none');
+        }
+    });
 
     $('.action-drop-btn').each(function () {
         //removeClass('show');
