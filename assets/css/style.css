@@ -976,7 +976,21 @@ input:checked+.slider:before {
     display: none !important;
 }
 
-#secret-key {
+#api-key,
+#api-url,
+#api-secret,
+#secret-key,
+#access-token,
+#refresh-token,
+#account-id,
+#client-id,
+#client-secret,
+#redirect-url,
+#pwd,
+#username,
+#hash-key,
+#sendlane-subdomain,
+#webhook-url {
     display: none;
 }
 

@@ -46,78 +46,258 @@ $(document).ready(function () {
     $('#int-platform').on('change', function () {
         var apiKey = true;
         var apiUrl = true;
+        var apiSecret = false;
         var secretKey = false;
+        var accessToken = false;
+        var refrehToken = false;
+        var accountID = false;
+        var clientID = false;
+        var clientSecret = false;
+        var redirectURL = false;
+        var password = false;
+        var username = false;
+        var hashKey = false;
+        var sendlaneSubdomain = false;
+        var webhookURL = false;
 
         switch ($(this).val()) {
             case 'active-campaign':
                 apiKey = true;
                 apiUrl = true;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'convert-kit':
                 apiKey = true;
                 apiUrl = false;
+                apiSecret = false;
                 secretKey = true;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'aweber':
-                apiKey = true;
-                apiUrl = true;
+                apiKey = false;
+                apiUrl = false;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = true;
+                refrehToken = true;
+                accountID = true;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'constant-contact':
                 apiKey = true;
                 apiUrl = false;
-                secretKey = true;
+                apiSecret = false;
+                secretKey = false;
+                accessToken = true;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'infusion-soft':
-                apiKey = true;
-                apiUrl = true;
+                apiKey = false;
+                apiUrl = false;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = true;
+                clientSecret = true;
+                redirectURL = true;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'drip':
-                apiKey = true;
+                apiKey = false;
                 apiUrl = false;
-                secretKey = true;
+                apiSecret = true;
+                secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'klaviyo':
                 apiKey = true;
-                apiUrl = true;
+                apiUrl = false;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'get-response':
                 apiKey = true;
                 apiUrl = false;
-                secretKey = true;
+                apiSecret = false;
+                secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'i-contact':
                 apiKey = true;
-                apiUrl = true;
+                apiUrl = false;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = true;
+                username = true;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'mailer-lite':
                 apiKey = true;
                 apiUrl = false;
-                secretKey = true;
+                apiSecret = false;
+                secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'mail-chimp':
                 apiKey = true;
-                apiUrl = true;
+                apiUrl = false;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'sendiio':
                 apiKey = true;
                 apiUrl = false;
-                secretKey = true;
+                apiSecret = true;
+                secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = false;
                 break;
             case 'send-lane':
                 apiKey = true;
-                apiUrl = true;
+                apiUrl = false;
+                apiSecret = false;
                 secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = true;
+                sendlaneSubdomain = true;
+                webhookURL = false;
                 break;
             case 'web-hook':
-                apiKey = true;
+                apiKey = false;
                 apiUrl = false;
-                secretKey = true;
+                apiSecret = false;
+                secretKey = false;
+                accessToken = false;
+                refrehToken = false;
+                accountID = false;
+                clientID = false;
+                clientSecret = false;
+                redirectURL = false;
+                password = false;
+                username = false;
+                hashKey = false;
+                sendlaneSubdomain = false;
+                webhookURL = true;
                 break;
             default:
         }
@@ -139,6 +319,63 @@ $(document).ready(function () {
         } else {
             $('#secret-key').css('display', 'none');
         }
+
+        if (apiSecret) {
+            $('#api-secret').css('display', 'inline');
+        } else {
+            $('#api-secret').css('display', 'none');
+        }
+        if (accessToken) {
+            $('#access-token').css('display', 'inline');
+        } else {
+            $('#access-token').css('display', 'none');
+        }
+        if (accountID) {
+            $('#account-id').css('display', 'inline');
+        } else {
+            $('#account-id').css('display', 'none');
+        }
+        if (clientID) {
+            $('#client-id').css('display', 'inline');
+        } else {
+            $('#client-id').css('display', 'none');
+        }
+        if (clientSecret) {
+            $('#client-secret').css('display', 'inline');
+        } else {
+            $('#client-secret').css('display', 'none');
+        }
+        if (redirectURL) {
+            $('#redirect-url').css('display', 'inline');
+        } else {
+            $('#redirect-url').css('display', 'none');
+        }
+        if (password) {
+            $('#pwd').css('display', 'inline');
+        } else {
+            $('#pwd').css('display', 'none');
+        }
+        if (username) {
+            $('#username').css('display', 'inline');
+        } else {
+            $('#username').css('display', 'none');
+        }
+        if (hashKey) {
+            $('#hash-key').css('display', 'inline');
+        } else {
+            $('#hash-key').css('display', 'none');
+        }
+        if (sendlaneSubdomain) {
+            $('#sendlane-subdomain').css('display', 'inline');
+        } else {
+            $('#sendlane-subdomain').css('display', 'none');
+        }
+        if (webhookURL) {
+            $('#webhook-url').css('display', 'inline');
+        } else {
+            $('#webhook-url').css('display', 'none');
+        }
+
     });
 
     $('.action-drop-btn').each(function () {

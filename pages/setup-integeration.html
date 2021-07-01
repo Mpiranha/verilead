@@ -339,20 +339,21 @@
                     <div class="form-group">
                         <label for="my-input">Platform</label>
                         <select id="int-platform" class="form-control form-general" name="">
-                            <option value="active-campaign">ActiveCampaign</option> (API key, API URL)
-                            <option value="convert-kit">ConvertKit</option> (API key, Secret key)
-                            <option value="aweber">Aweber</option> (API key, API URL)
-                            <option value="constant-contact">Constant Contact</option> (API key, Secret key)
-                            <option value="infusion-soft">InfusionSoft</option> (API key, API URL)
-                            <option value="drip">Drip</option> (API key, Secret key)
-                            <option value="klaviyo">Klaviyo</option> (API key, API URL)
-                            <option value="get-response">Get Response</option> (API key, Secret key)
-                            <option value="i-contact">iContact</option> (API key, API URL)
-                            <option value="mailer-lite">MailerLite</option> (API key, Secret key)
-                            <option value="mail-chimp">MailChimp</option> (API key, API URL)
-                            <option value="sendiio">Sendiio</option> (API key, Secret key)
-                            <option value="send-lane">SendLane</option> (API key, API URL)
-                            <option value="web-hook">Webhook</option> (API key, Secret key)
+                            <option selected value="none">None</option>
+                            <option value="active-campaign">ActiveCampaign</option>
+                            <option value="convert-kit">ConvertKit</option>
+                            <option value="aweber">Aweber</option>
+                            <option value="constant-contact">Constant Contact</option>
+                            <option value="infusion-soft">InfusionSoft</option>
+                            <option value="drip">Drip</option>
+                            <option value="klaviyo">Klaviyo</option>
+                            <option value="get-response">Get Response</option>
+                            <option value="i-contact">iContact</option>
+                            <option value="mailer-lite">MailerLite</option>
+                            <option value="mail-chimp">MailChimp</option>
+                            <option value="sendiio">Sendiio</option>
+                            <option value="send-lane">SendLane</option>
+                            <option value="web-hook">Webhook</option>
                         </select>
                     </div>
 
@@ -364,8 +365,56 @@
                         <label for="my-input">API URL</label>
                         <input class="form-control form-general" type="text" name="">
                     </div>
+                    <div id="api-secret" class="form-group">
+                        <label for="my-input">API Secret</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
                     <div id="secret-key" class="form-group">
                         <label for="my-input">Secret Key</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="access-token" class="form-group">
+                        <label for="my-input">Access Token</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="refresh-token" class="form-group">
+                        <label for="my-input">Refresh Token</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="account-id" class="form-group">
+                        <label for="my-input">Account ID</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="client-id" class="form-group">
+                        <label for="my-input">Client ID</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="client-secret" class="form-group">
+                        <label for="my-input">Client Secret</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="redirect-url" class="form-group">
+                        <label for="my-input">Redirect URL</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="pwd" class="form-group">
+                        <label for="my-input">Password</label>
+                        <input class="form-control form-general" type="password" name="">
+                    </div>
+                    <div id="username" class="form-group">
+                        <label for="my-input">Username</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="hash-key" class="form-group">
+                        <label for="my-input">Hash Key</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="sendlane-subdomain" class="form-group">
+                        <label for="my-input">Sendlane Subdomain</label>
+                        <input class="form-control form-general" type="text" name="">
+                    </div>
+                    <div id="webhook-url" class="form-group">
+                        <label for="my-input">Webhook URL</label>
                         <input class="form-control form-general" type="text" name="">
                     </div>
 
